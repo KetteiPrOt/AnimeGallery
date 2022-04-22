@@ -1,0 +1,330 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Inter'; /* font weight 300 700 y 800 */
+	background: url(img/thumb.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+
+
+/* ---------- ---------- HEADER ---------- ---------- */
+
+header .header {
+	text-align: center;
+	background: rgba(0, 0, 0, 1); /* rgba(193, 193, 193, 1) color gris */
+	height: 10%; /*62px*/
+}
+
+header .header .logo {
+	position: absolute;
+}
+
+header .header .logo a img {
+	width: 150px;
+	margin: 2px 0px 2px 20px;
+}
+
+header .header .baseline {
+	width: 100%;
+	height: 1px;
+	background: rgba(193, 193, 193, 1);
+}
+
+header .header h1 {
+	text-decoration: none;
+	font-weight: 800;
+	font-size: 50px;
+	letter-spacing: 10px;
+	color: rgb(255, 190, 18);
+	display: inline;
+	cursor: default;
+	transition: color 1s ease;
+}
+
+header .header h1:hover {
+	color: rgba(255, 255, 255, 1); /* Ingresar el color amarillo y que cambie a gris al pasar encima el cursor*/
+}
+
+
+
+/* ---------- ---------- MAIN ---------- ---------- */
+
+main .presentation {
+	background: rgba(193, 193, 193, .5);
+	backdrop-filter: blur(2px);
+	width: 80%;
+	height: 100%;
+	margin: 0px auto;
+	text-align: center;
+}
+
+/* ---------- SUBTITLES ---------- */
+
+main .presentation .subtitle-one {
+	color: white;
+	font-weight: 700;
+	font-size: 40px;
+	letter-spacing: 3px;
+	display: inline-block;
+	padding: 10px;
+	cursor: default;
+	transition: color .5s ease;
+}
+
+main .presentation .subtitle-one:hover {
+	color: rgb(204, 49, 54);
+}
+
+main .presentation .subtitle-other {
+	color: white;
+	font-weight: 700;
+	font-size: 40px;
+	letter-spacing: 3px;
+	display: inline-block;
+	padding: 0px 10px 20px 10px;
+	cursor: default;
+	transition: color .5s ease;
+}
+
+main .presentation .subtitle-other:hover {
+	color: rgb(204, 49, 54);
+}
+
+/* ---------- FRAME CONTENTS ---------- */
+
+main .presentation .frame-content {
+	background: transparent;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	/* Este contenedor es para aplicar flexbox a los weapon-frame */
+}
+
+/* -- WEAPON-FRAME -- */
+
+main .presentation .frame-content .weapon-frame {
+	width: 150px;
+	height: 175px;
+	background: rgba(255, 255, 255, .5);
+	margin: 10px 51px 30px 51px;
+	border: solid 2px rgba(193, 193, 193, .8);
+	position: relative;
+	transition: border .3s ease;
+	/* Hay que utilizar mediaqueries para regular los margenes
+	cuando uno de los weapon items des´paresacan por reducir la pantalla */
+}
+
+/* WEAPON-FRAME HOVER */
+
+main .presentation .frame-content .weapon-frame:hover {
+	border: solid 2px rgba(204, 49, 54, .8);
+}
+
+/* WEAPON GENERIC SIZE*/
+
+main .presentation .frame-content .weapon-frame .weapon {
+	width: 146px;
+	height: 146px;
+	z-index: 1;
+}
+
+/* WEAPON NAME */
+
+main .presentation .frame-content .weapon-frame .name {
+	font-size: 17px;
+	font-weight: 300;
+	margin-top: 2px;
+	cursor: default;
+	z-index: 2;
+}
+
+/* WEAPON ICON */
+main .presentation .frame-content .weapon-frame .icon {z-index: 3;}
+
+main .presentation .frame-content .weapon-frame .icon svg {
+	width: 20px;
+	height: 20px;
+	opacity: .7;
+	cursor: pointer;
+	position: absolute;
+	top: 87%;
+	left: 79%;
+	bottom: auto;
+	right: auto;
+}
+
+main .presentation .frame-content .weapon-frame .button {
+	width: 20px;
+	height: 20px;
+	opacity: .0;
+	position: absolute;
+	top: 87%;
+	left: 79%;
+	bottom: auto;
+	right: auto;
+	z-index: 5;
+}
+
+/* WEAPON-DESCRIPTION */
+main .presentation .frame-content .weapon-frame .weapon-description {
+	width: 150px;
+	height: 175px;
+	background: rgba(193, 193, 193, 1);
+	margin: 10px 51px 30px 51px;
+	padding: 10px 5px 0px 5px;
+	border: solid 2px rgba(204, 49, 54, 1);
+	border-radius: 7px;
+	opacity: .0;
+	cursor: default;
+	position: absolute;
+	top: -7%;
+	left: -36%;
+	bottom: auto;
+	right: auto;
+	transition: opacity .3s linear;
+	z-index: 4;
+}
+
+/*main .presentation .frame-content .weapon-frame .weapon-description:hover {
+	opacity: .95;
+}*/
+
+/* WEAPON SPECIFIES */
+
+main .presentation .frame-content .weapon-frame .weapon-description .specifies {
+	font-size: 12px;
+	font-weight: 300;
+	text-align: center;
+	width: 135px;
+	border: solid 1px rgba(88, 88, 88, 1);
+	margin: 0px auto;
+}
+
+.info-title {
+	font-weight: bold;
+	font-size: 19px;
+}
+
+.more-info {
+	color: gray;
+}
+
+.link-info {
+	/*display: inline-block;
+ 	margin-right: 40px;*/
+	text-decoration: none;
+	font-style: italic;
+	color: black;
+}
+
+.link-info:hover {
+	color: rgba(204, 49, 54, 1);
+	font-size: 18px;
+}
+
+.healt {
+	color: green;
+}
+
+.damage {
+	color: red;
+}
+
+.evasion {
+	color: blue;
+}
+
+.rate-of-fire {
+	color: yellow;
+}
+
+/* WEAPONS IMAGE SIZE */
+
+main .presentation .frame-content .weapon-frame .weapon .img-size {
+	width: 100%;
+	height: 100%;
+}
+
+
+
+/* ---------- ---------- FOOTER ---------- ---------- */
+
+footer .footer {
+	text-align: center;
+	background: rgba(0, 0, 0, 1); /* rgba(193, 193, 193, 1) color gris */
+	height: 60px;
+}
+
+footer .footer .topline {
+	width: 100%;
+	height: 1px;
+	margin-bottom: 20px;
+	background: rgba(193, 193, 193, 1);
+}
+
+footer .footer p {
+	color: white;
+	display: inline-block;
+}
+
+
+
+/* ---------- ---------- MEDIA QUERIES ---------- ---------- */
+
+@media screen and (max-width: 965px) {
+	header .header .logo a img {
+		width: 100px;
+	}
+	header .header h1 {
+		font-size: 35px;
+	}
+	footer .footer {
+		height: 45px;
+	}
+	footer .footer .topline {
+		margin-bottom: 10px;
+	}
+	main .presentation .frame-content .weapon-frame {
+		margin: 10px 36px 30px 36px;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	header .header .logo a img {
+		width: 80px;
+	}
+	header .header h1 {
+		font-size: 30px;
+	}
+	footer .footer {
+		height: 45px;
+	}
+	footer .footer .topline {
+		margin-bottom: 10px;
+	}
+	main .presentation .frame-content .weapon-frame {
+		margin: 10px 21px 30px 21px;
+	}
+}
+
+@media screen and (max-width: 660px) {
+	header .header .logo a img {
+		display: none;
+	}
+	header .header h1 {
+		letter-spacing: 5px;
+	}
+	footer .footer {
+		height: 30px;
+	}
+	footer .footer .topline {
+		margin-bottom: 5px;
+	}
+}
