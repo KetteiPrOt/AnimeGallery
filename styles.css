@@ -181,7 +181,7 @@ main .presentation .frame-content .weapon-frame .weapon-description {
 	height: 175px;
 	background: rgba(193, 193, 193, 1);
 	margin: 10px 51px 30px 51px;
-	padding: 10px 5px 0px 5px;
+	padding: 28px 5px 0px 5px;
 	border: solid 2px rgba(204, 49, 54, 1);
 	opacity: .0;
 	cursor: default;
