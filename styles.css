@@ -5,7 +5,7 @@
 }
 
 body {
-	font-family: 'Inter'; /* font weight 300 700 y 800 */
+	font-family: 'Inter'; /* font weight 300 700 and 800 */
 	background: url(img/thumb.jpg);
 	background-size: cover;
 	background-attachment: fixed;
@@ -17,7 +17,7 @@ body {
 
 header .header {
 	text-align: center;
-	background: rgba(0, 0, 0, 1); /* rgba(193, 193, 193, 1) color gris */
+	background: rgba(0, 0, 0, 1); /* rgba(193, 193, 193, 1) gray color */
 	height: 10%; /*62px*/
 }
 
@@ -118,7 +118,7 @@ main .presentation .frame-content .weapon-frame {
 	position: relative;
 	transition: border .3s ease;
 	/* Hay que utilizar mediaqueries para regular los margenes
-	cuando uno de los weapon items des´paresacan por reducir la pantalla */
+	cuando uno de los weapon items desaparescan por reducir la pantalla */
 }
 
 /* WEAPON-FRAME HOVER */
@@ -146,7 +146,7 @@ main .presentation .frame-content .weapon-frame .name {
 }
 
 /* WEAPON ICON */
-main .presentation .frame-content .weapon-frame .icon {z-index: 3;}
+main .presentation .frame-content .weapon-frame .icon { z-index: 3; }
 
 main .presentation .frame-content .weapon-frame .icon svg {
 	width: 20px;
@@ -181,7 +181,7 @@ main .presentation .frame-content .weapon-frame .weapon-description {
 	height: 175px;
 	background: rgba(193, 193, 193, 1);
 	margin: 10px 51px 30px 51px;
-	padding: 28px 5px 0px 5px;
+	padding: 10px 5px 0px 5px;
 	border: solid 2px rgba(204, 49, 54, 1);
 	opacity: .0;
 	cursor: default;
